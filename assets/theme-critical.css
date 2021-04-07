@@ -1311,7 +1311,8 @@ body:not(.template-index) .giftcard-wrapper,
   text-transform: var(--font--button-transform);
   transition: all 0.3s ease-in-out;
   color: var(--color--btn);
-  font-size: var(--font--button-size);
+  /* font-size: var(--font--button-size); original settings*/  
+  font-size: 20px; 
   font-weight: var(--font--button-weight);
   font-style: var(--font--button-style);
   height: auto;
@@ -1406,7 +1407,7 @@ body:not(.template-index) .giftcard-wrapper,
 .c-btn--plus:after,
 .c-btn--close:after {
   font-size: 12px;
-  font-family: "sb-icons";
+  /* font-family: "sb-icons"; */
   margin-left: 6px;
   line-height: 1;
   top: -1px;
