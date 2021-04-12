@@ -5053,10 +5053,10 @@ body[data-heading-border="false"] .promo-pop__title.promo-pop__title {
   border-color: #222; }
 
 .newsletter--dark .newsletter__btn {
-  background-color: #222;
+  background-color: #56af69;
   color: #fff; }
   .newsletter--dark .newsletter__btn:hover, .newsletter--dark .newsletter__btn:focus {
-    background-color: #111; }
+    background-color: #61c677; }
 
 .newsletter--default-light .section__title-text,
 .newsletter--default-light .newsletter__form-message__text,

@@ -1,3 +1,4 @@
+
 <style type="text/css">
    .section--{{ section.id }} .newsletter {
         background-color: {{ section.settings.newsletter_bg }};
@@ -9,15 +10,18 @@
         <div class="newsletter newsletter--{{ section.settings.newsletter_style }}">
             <div class="newsletter__content">
                 
+              
+
                 <div class="newsletter__title section__title section__title--center section__title--desc">
                     {% if section.settings.footer_newsletter_title != blank %}
+                    
                         <h2 class="section__title-text">{{ section.settings.footer_newsletter_title | escape }}</h2>
                     {% endif %}
                     {% if section.settings.footer_newsletter_desc != blank %} 
                         <div class="section__title-desc rte">{{ section.settings.footer_newsletter_desc }}</div>
                     {% endif %}
                 </div>
-
+                
                 <div class="newsletter__form-wrapper">
                     {% form 'customer', id: 'newsletter' %}
                         {{ form.errors | default_errors }}
