@@ -1572,7 +1572,7 @@ body:not(.template-index) .giftcard-wrapper,
   right: 0;
   left: 0;
   top: 0;
-  text-align: center;
+  /* text-align: center; */
   padding: 0;
   margin: 0 auto;
   max-width: 420px;
@@ -1624,13 +1624,19 @@ body:not(.template-index) .giftcard-wrapper,
     padding: 0 18px; } }
 
 .primary-nav {
-  text-align: left;
-  float: left; }
+  /* text-align: right; */
+  float: right; 
+  
+
+}
 
 .primary-nav__items {
+  justify-content: right;
   margin-left: 0;
   list-style: none;
-  float: left; }
+  /* float: left; */
+
+ }
 
 .primary-nav__item {
   margin-right: 15px;
