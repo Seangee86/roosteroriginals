@@ -1530,7 +1530,8 @@ body:not(.template-index) .giftcard-wrapper,
 .header,
 .header__logo,
 .header-trigger {
-  min-height: 54px; }
+  min-height: 54px; 
+}
 
 .shopify-section-header {
   position: relative;
@@ -1574,7 +1575,8 @@ body:not(.template-index) .giftcard-wrapper,
   top: 0;
   /* text-align: center; */
   padding: 0;
-  margin: 0 auto;
+  /* margin: 0 auto; */
+  margin: 0 0 0 60px;  /* moved logo to the left*/
   max-width: 420px;
   width: fit-content;
   width: -moz-fit-content; }
@@ -1609,7 +1611,9 @@ body:not(.template-index) .giftcard-wrapper,
 
 .header__logo-img {
   vertical-align: baseline;
-  padding: 9px 0; }
+  padding: 9px 0;
+  
+ }
   @media screen and (max-width: 480px) {
     .header__logo-img {
       max-width: 140px; } }
@@ -1634,20 +1638,27 @@ body:not(.template-index) .giftcard-wrapper,
   justify-content: right;
   margin-left: 0;
   list-style: none;
-  /* float: left; */
+  float: left;
 
  }
 
 .primary-nav__item {
-  margin-right: 15px;
-  position: relative; }
+  /* margin-right: 15px; */
+  position: absolute; 
+  right: 80px;
+}
+  
 
 .secondary-nav {
-  text-align: right;
-  float: right; }
+  /* text-align: right; */
+  float: right; 
+}
 
 .secondary-nav__item {
-  margin-left: 15px; }
+  margin-left: 15px; 
+  position: absolute;
+  left: 155px;
+}
 
 .primary-nav,
 .secondary-nav {
@@ -5074,3 +5085,6 @@ body:before {
 
 .u-text-right {
   text-align: right; }
+
+
+
