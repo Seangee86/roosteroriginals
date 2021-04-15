@@ -11,6 +11,7 @@
             <div class="newsletter__content">
                 
               
+                <img class="env" src="{{ section.settings.inline_image | img_url: '80x' }}">
 
                 <div class="newsletter__title section__title section__title--center section__title--desc">
                     {% if section.settings.footer_newsletter_title != blank %}
@@ -89,6 +90,11 @@
                     "label": "Light"
                 }
             ]
+        },
+        {
+            "type": "image_picker",
+            "id": "inline_image",
+            "label": "Inline image"
         },
         {
             "type": "text",

@@ -1,3 +1,4 @@
+<img class="leaf-img" src="{{ section.settings.inline_image | img_url: '70x' }}">
 <style>
 .section--{{ section.id }} .home-intro__bg--overlay:before,
 .section--{{ section.id }} .home-intro__bg--cover:before {
@@ -12,6 +13,7 @@
     width: {{ section.settings.inline_image_width }}px
 }
 </style>
+
 <section class="section section--{{ section.id }}" data-section-id="{{ section.id }}" data-section-type="home-intro">
     <div class="container">
 
@@ -39,9 +41,12 @@
                         {{ 'lifestyle-1' | placeholder_svg_tag: 'placeholder-svg' }}
                     </div>
                 {% endif %}
+
                 <div class="home-intro__bg--overlay u-bg-overlay"></div>
+                    
                 <div class="home-intro__content">
-                    {% unless section.settings.inline_image == blank %}
+                
+                    <!-- {% unless section.settings.inline_image == blank %}
                         <div class="home-intro__media">
                             {%- assign img_url = section.settings.inline_image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
                             <img
@@ -61,7 +66,7 @@
                                 loading="lazy"
                             />
                         </div>
-                    {% endunless %}
+                    {% endunless %} -->
                     <h4 class="home-intro__text h2">
                         <div class="rte">{{ section.settings.text }}</div>
                     </h4>
@@ -78,18 +83,19 @@
                     {% unless section.settings.link == blank %}
                         <div class="home-intro__link-wrap">
                             <a href="{{ section.settings.link }}" class="link link--arrow home-intro__link">{{ section.settings.link_title | escape }}</a>
-                            <!-- <div>
-                                <img class="divider">
-                            </div> -->
+                           
                         </div>
+                        
                     {% endunless %}
                     
                 </div>
+                
             </div>
+           
         </div>
         
     </div>
-    
+    <img class="x-img" src="{{ section.settings.inline_image2 | img_url: '120x' }}">
 </section>
 
 {% schema %}
@@ -132,6 +138,11 @@
         {
             "type": "image_picker",
             "id": "inline_image",
+            "label": "Inline image"
+        },
+        {
+            "type": "image_picker",
+            "id": "inline_image2",
             "label": "Inline image"
         },
         {

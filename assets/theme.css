@@ -3760,7 +3760,7 @@ body:not(.template-index) .giftcard-wrapper,
    #SECTION
    ========================================================================== */
 .section--mb-s {
-  margin-bottom: 12px; }
+  margin-bottom: 0px; }
 
 .section--product-single {
   position: static; }
@@ -5019,7 +5019,7 @@ body[data-heading-border="false"] .promo-pop__title.promo-pop__title {
    #NEWSLETTER SECTION
    ========================================================================== */
 .newsletter {
-  padding: 48px 24px;
+  padding: 34px 24px;
   background: #f0f0f0; }
   .newsletter .section__title-text {
     color: #111; }
