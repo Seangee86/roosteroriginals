@@ -46,27 +46,7 @@
                     
                 <div class="home-intro__content">
                 
-                    <!-- {% unless section.settings.inline_image == blank %}
-                        <div class="home-intro__media">
-                            {%- assign img_url = section.settings.inline_image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
-                            <img
-                                class="home-intro__media-img"
-                                src="{{ section.settings.inline_image | img_url: '300x' }}"
-                                srcset="
-                                    {{ section.settings.inline_image | img_url: '180x' }} 180w {{ 180 | divided_by: section.settings.inline_image.aspect_ratio | round }}h,
-                                    {{ section.settings.inline_image | img_url: '360x' }} 360w {{ 360 | divided_by: section.settings.inline_image.aspect_ratio | round }}h,
-                                    {{ section.settings.inline_image | img_url: '540x' }} 540w {{ 540 | divided_by: section.settings.inline_image.aspect_ratio | round }}h,
-                                    {{ section.settings.inline_image | img_url: '720x' }} 720w {{ 720 | divided_by: section.settings.inline_image.aspect_ratio | round }}h,
-                                    {{ section.settings.inline_image | img_url: '900x' }} 900w {{ 900 | divided_by: section.settings.inline_image.aspect_ratio | round }}h,
-                                    {{ section.settings.inline_image | img_url: '1080x' }} 1080w {{ 1080 | divided_by: section.settings.inline_image.aspect_ratio | round }}h
-                                "
-                                width="300"
-                                height="{{ 300 | divided_by: section.settings.inline_image.aspect_ratio | round }}"
-                                alt="{{ section.settings.inline_image.alt }}"
-                                loading="lazy"
-                            />
-                        </div>
-                    {% endunless %} -->
+                    
                     {% if section.settings.section_title != blank %}
                     <div class="section__title section__title--desc section__title--center home-rich-text__title">
                         <h2 class="section__title-text">{{ section.settings.section_title | escape }}</h2>
