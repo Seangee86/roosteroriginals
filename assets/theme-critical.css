@@ -501,6 +501,7 @@ section {
  * `article` contexts in Chrome, Firefox, and Safari.
  */
 h1 {
+  font-family: 'Bebas Neue', cursive;
   font-size: 2em;
   margin: 0.67em 0; }
 
@@ -1053,7 +1054,8 @@ img {
   margin: 0;
   padding: 0;
   list-style: none;
-  margin-left: -30px;
+  /* margin-left: 150px;
+  margin-right: 150px; */
   font-size: 0; }
 
 .o-layout__item {
@@ -1108,14 +1110,18 @@ img {
 /* Fill order modifiers.
    ========================================================================== */
 .o-layout--center {
-  text-align: center; }
+  text-align: center;
+ }
   .o-layout--center > .o-layout__item {
-    text-align: left; }
+    text-align: left;
+   }
 
 .o-layout--right {
   text-align: right; }
   .o-layout--right > .o-layout__item {
-    text-align: left; }
+    text-align: left; 
+   
+  }
 
 .o-layout--reverse {
   direction: rtl; }
@@ -1312,12 +1318,12 @@ body:not(.template-index) .giftcard-wrapper,
   transition: all 0.3s ease-in-out;
   color: var(--color--btn);
   /* font-size: var(--font--button-size); original settings*/  
-  font-size: 20px; 
+  font-size: 18px; 
   font-weight: var(--font--button-weight);
   font-style: var(--font--button-style);
   height: auto;
   line-height: 30px;
-  padding: 9px 30px;
+  padding: 9px 20px;
   border-radius: 0;
 
 
@@ -1390,7 +1396,7 @@ body:not(.template-index) .giftcard-wrapper,
   font-size: 1.65rem; }
 
 .c-btn--full {
-  width: 100%; 
+  width: 100%;
 }
 
 @media screen and (max-width: 980px) {
@@ -1478,7 +1484,8 @@ body:not(.template-index) .giftcard-wrapper,
    #CONTAINER
    ========================================================================== */
 .container {
-  padding: 0 30px;
+  /* padding: 0 30px; */
+  padding: 0 0;
   width: 100%;
   margin: 0 auto;
   max-width: 2200px; }
@@ -2491,7 +2498,10 @@ body:not(.template-index) .giftcard-wrapper,
    ========================================================================== */
 .product {
   margin-bottom: 0px;
-  position: relative; }
+  position: relative;
+
+ 
+ }
 
 .product--center .product__details,
 .product--center .product__swatch {
@@ -2502,7 +2512,8 @@ body:not(.template-index) .giftcard-wrapper,
 
 .product-top {
   position: relative;
-  overflow: hidden; }
+  overflow: hidden;
+}
 
 .product__media {
   position: relative;
@@ -2586,8 +2597,8 @@ body:not(.template-index) .giftcard-wrapper,
     color: var(--color--alt-text); }
 
 .product-btn {
-  width: 40%;
-  left: 30%;
+  /* width: 40%;
+  left: 30%; */
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out; }
@@ -3138,7 +3149,7 @@ body:not(.template-index) .giftcard-wrapper,
     width: 300px; } }
 
 .section {
-  margin-bottom: 42px;
+  margin-bottom: 0;
   position: relative; }
 
 .section--blog-template,
@@ -3420,6 +3431,7 @@ body:not(.template-index) .giftcard-wrapper,
   margin-bottom: 26px; }
 
 .home-carousel--title-1 .section__title-text {
+  
   font-size: 0.85em;
   line-height: 1.65; }
 

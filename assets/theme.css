@@ -13,13 +13,14 @@
   display: inline-block;
   margin: 18px 0;
   color: var(--color--text-lightest);
-  /* 
-    padding: 0;
+  
+    /* padding: 0;
     opacity: 0;
     height: 0;
     visibility: hidden;
-    overflow: hidden;
-    */ }
+    overflow: hidden; */
+    
+  }
 
 /* ==========================================================================
    #BASIC FORMS
@@ -905,7 +906,8 @@ td.td2 {
   .article__title .section__title-text {
     padding: 0;
     font-size: 1.8rem;
-    line-height: 1.75em; }
+    line-height: 1.75em; 
+  }
   .article__date.article__date {
     right: auto;
     left: 50%;
@@ -3796,6 +3798,8 @@ body:not(.template-index) .giftcard-wrapper,
   margin-bottom: 24px; }
 
 .section__title-text {
+  font-family: 'Bebas Neue', cursive;
+  letter-spacing: 3px;
   position: relative;
   margin: 0; }
   .section__title-text:after {
